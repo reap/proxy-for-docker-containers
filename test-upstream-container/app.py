@@ -1,10 +1,10 @@
-from flask import Flask, render_template
 import os
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
+def index():
     container_id = os.environ['CONTAINER_ID']
     return render_template('index.html', container_name = container_id)
 
