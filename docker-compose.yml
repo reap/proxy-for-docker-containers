@@ -4,6 +4,10 @@ services:
     build: proxy-docker/.
     ports:
      - "8080:8080"
+  another_proxy:
+    build: apache-proxy/.
+    ports:
+     - "8090:8080"
   first:
     build: test-upstream-container/.
     environment:
