@@ -1,7 +1,7 @@
 version: '3'
 services:
   proxy:
-    build: proxy-docker/.
+    build: apache-proxy/.
     ports:
      - "8080:8080"
   first:
